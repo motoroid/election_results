@@ -41,6 +41,7 @@ with open(file_to_load) as election_data:
        # Print the candidate name from each row
         candidate_name = row[2]
 
+
         # If the candidate does not match any existing candidate
         if candidate_name not in candidate_options:
             # Add it to the list of candidates.
@@ -88,7 +89,7 @@ with open(file_to_save, "w") as txt_file:
     print(winning_candidate_summary)
     # save the winning candidate's results to the text file.
     txt_file.write(winning_candidate_summary)
-       
+
         
         
     
